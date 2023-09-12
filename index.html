@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bad Descriptions</title>
+</head>
+<body class="bg-dark text-white">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5/js/bootstrap.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	<div class="container">
+		<!--
+			# Stage 1
+			* Start page that fades into the game
+			* Card with description. Flips on click to reveal movie
+			  poster, name, and year
+			* Casual mode with no timer. Keeps going until player
+			  leaves page.
+
+			# Stage 2
+			* Quiz mode with timer
+			* Mode with three chances before game ends
+
+			# Stage 3
+			* Categories for movies, tv shows, books
+			* Categories for year of movies
+			* Categories for genre of movies
+			* Categories for year of books
+			* Categories for genre of books
+
+			# Stage 4
+			* Monetization (somehow)
+			* Movie of the week (for new descriptions)
+			* Book of the week (for new descriptions)
+		-->
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h1>A collection of bad descriptions I've heard or made up.</h1>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h2>Guess the movie</h2>
+			</div>
+		</div>
+		<div class="row justify-content-center my-4">
+			<div class="col-auto text-center blockquote">
+				<h3 id="description"></h3>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<div id="title"></div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-4">
+			<div class="col-auto">
+				<button type="button" id="showBtn"
+					class="btn btn-light" onclick="show()">Show answer</button>
+			</div>
+			<div class="col-auto">
+				<button type="button" id="randBtn"
+					class="btn btn-light" onclick="random()">Random</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

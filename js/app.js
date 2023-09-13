@@ -11,6 +11,7 @@ function getMovies() {
 
 function random(list) {
 	if(!list) { list = movies }
+	// TODO Make sure it doesn't pick the current one
 	const item = list[Math.floor(Math.random() * list.length)]
 	$("#description").text(item.description)
 	$("#title").text(item.title)
